@@ -114,7 +114,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="SATURDAY"
+            android:text="First Day"
             android:textSize="18sp"
             android:gravity="center"/>
         <LinearLayout
@@ -129,6 +129,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/txtDegFirst"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="26"
@@ -142,6 +143,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/txtWeatherFirst"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="0dp"
@@ -150,9 +152,12 @@
                 android:gravity="center"/>
         </LinearLayout>
         <ImageView
+            android:id="@+id/imgWeatherFirst"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="10dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.4"
+            android:layout_weight="1.1"
             android:background="@drawable/sunny"/>
         <ImageView
             android:layout_width="3dp"
@@ -176,7 +181,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="SUNDAY"
+            android:text="Second Day"
             android:textSize="18sp"
             android:gravity="center"/>
         <LinearLayout
@@ -191,6 +196,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/txtDegSecond"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="26"
@@ -204,6 +210,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/txtWeatherSecond"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="0dp"
@@ -212,9 +219,12 @@
                 android:gravity="center"/>
         </LinearLayout>
         <ImageView
+            android:id="@+id/imgWeatherSecond"
             android:layout_width="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="10dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.4"
+            android:layout_weight="1.1"
             android:background="@drawable/sunny"/>
         <ImageView
             android:layout_width="3dp"
@@ -238,7 +248,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="MONDAY"
+            android:text="Third Day"
             android:textSize="18sp"
             android:gravity="center"/>
         <LinearLayout
@@ -253,6 +263,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/txtDegThird"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="26"
@@ -266,6 +277,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/txtWeatherThird"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="0dp"
@@ -274,9 +286,12 @@
                 android:gravity="center"/>
         </LinearLayout>
         <ImageView
+            android:id="@+id/imgWeatherThird"
             android:layout_width="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="10dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.4"
+            android:layout_weight="1.1"
             android:background="@drawable/sunny"/>
         <ImageView
             android:layout_width="3dp"
@@ -300,7 +315,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
-            android:text="TUESDAY"
+            android:text="Fourth Day"
             android:textSize="18sp"
             android:gravity="center"/>
         <LinearLayout
@@ -315,6 +330,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
                 <TextView
+                    android:id="@+id/txtDegFourth"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="26"
@@ -328,6 +344,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/txtWeatherFourth"
                 android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:layout_height="0dp"
@@ -336,9 +353,12 @@
                 android:gravity="center"/>
         </LinearLayout>
         <ImageView
+            android:id="@+id/imgWeatherFourth"
             android:layout_width="0dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="10dp"
             android:layout_height="match_parent"
-            android:layout_weight="1.4"
+            android:layout_weight="1.1"
             android:background="@drawable/sunny"/>
         <ImageView
             android:layout_width="3dp"
@@ -393,30 +413,6 @@
             android:padding="10dp"
             android:text="Tehran"
             android:gravity="center"/>
-        <TextView
-            android:id="@+id/cityGetShiraz"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:padding="10dp"
-            android:text="Shiraz"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:padding="10dp"
-            android:text="Barcelona"
-            android:gravity="center"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:padding="10dp"
-            android:text="Ramsar"
-            android:gravity="center"/>
-
-
     </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
