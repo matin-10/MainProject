@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mainproject.CityWeather;
 import com.example.mainproject.Weather;
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
                 //Init Weather Type
                 TextView txtWeather = findViewById(R.id.txtWeather);
+                ImageView imgWeather = findViewById(R.id.imgWeather);
 
                 try {
 
@@ -80,7 +82,22 @@ public class MainActivity extends AppCompatActivity {
                     String result2 = object.getString("main");
 
                 txtWeather.setText(result2);
-                }catch (Exception e){e.printStackTrace();}
+
+                switch (result2){
+                    case "Rain":{imgWeather.setBackgroundResource(R.drawable.rain_fourzero); break;}
+                    case "Clear":{imgWeather.setBackgroundResource(R.drawable.clear_threetwo);break;}
+                    case "Snow":{imgWeather.setBackgroundResource(R.drawable.snow_onefour);break;}
+                    case "Atmosphere":{imgWeather.setBackgroundResource(R.drawable.atmospher_twotwo);break;}
+                    case "Drizzle":{imgWeather.setBackgroundResource(R.drawable.drizzle_oneone);break;}
+                    case "Thunderstorm":{imgWeather.setBackgroundResource(R.drawable.thunder_zero);break;}
+                    default:imgWeather.setBackgroundResource(R.drawable.cloudy);
+
+                }
+
+                }catch (Exception e){e.printStackTrace();
+                    Toast.makeText(MainActivity.this, "unable to handle recieved data", Toast.LENGTH_SHORT).show();}
+
+
 
             }
 
