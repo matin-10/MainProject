@@ -386,6 +386,35 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:text="Tehran"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/cityGetShiraz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:text="Shiraz"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:text="Barcelona"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:text="Ramsar"
+            android:gravity="center"/>
 
 
     </LinearLayout>

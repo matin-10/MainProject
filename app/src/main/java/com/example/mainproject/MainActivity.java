@@ -41,8 +41,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        String url = "http://api.openweathermap.org/data/2.5/weather?id=6356055&APPID=651f9663537c4c2ec6965054e5025a83";
+        Findc g =new Findc();
+        String url =g.url1 = "http://api.openweathermap.org/data/2.5/weather?id=6356055&APPID=651f9663537c4c2ec6965054e5025a83";
         AsyncHttpClient client =new AsyncHttpClient();
+
+        TextView cityGetShiraz = findViewById(R.id.cityGetShiraz);
+        cityGetShiraz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Findc f =new Findc();
+                f.url1="http://api.openweathermap.org/data/2.5/weather?id=115019&APPID=651f9663537c4c2ec6965054e5025a83";
+            }
+        });
 
         client.get(url,new JsonHttpResponseHandler(){
             @Override
